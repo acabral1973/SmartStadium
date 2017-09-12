@@ -18,6 +18,14 @@ extension UIViewController{
         return nav
     }
     
+    func setBackground(imageBack : String){
+        UIGraphicsBeginImageContext(self.view.frame.size)
+        UIImage(named: imageBack)?.draw(in: self.view.bounds)
+        let image: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
+        self.view.backgroundColor = UIColor(patternImage: image)
+    }
+    
 }
 
 extension UIApplication {

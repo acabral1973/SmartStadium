@@ -21,6 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //Personalizo el color de la NavBar
         UINavigationBar.appearance().barTintColor = UIColor(red: 0, green: 176/255, blue: 240/255, alpha: 1)
+        UINavigationBar.appearance().tintColor = UIColor.white
         
         //Personalizo el color de la statusBar
         UIApplication.shared.statusBarView?.backgroundColor = UIColor(red: 0, green: 158/255, blue: 214/255, alpha: 1)
@@ -28,23 +29,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        
-        window = UIWindow(frame: UIScreen.main.bounds)
-        window?.makeKeyAndVisible()
-        
-        // Configuración de la apariencia por defecto de NavBar y TabBar
+//        // Override point for customization after application launch.
+//        
+//        window = UIWindow(frame: UIScreen.main.bounds)
+//        window?.makeKeyAndVisible()
+//        
+//        // Configuración de la apariencia por defecto de NavBar y TabBar
         setBarsAppearance()
-        
-        // Creo el combinador del menú
-        let mainVC = CustomTabBarController()
-        
-        // Asigno los controladores para
-        //mainVC.viewControllers = [housesVC, seasonsVC]
-        
-        // Declaro el combinador como controlador principal
-        window?.rootViewController = mainVC
-        
+//        
+//        // Creo el combinador del menú
+//        let mainVC = CustomTabBarController()
+//        
+//        // Asigno los controladores para
+//        //mainVC.viewControllers = [housesVC, seasonsVC]
+//        
+//        // Declaro el combinador como controlador principal
+//        window?.rootViewController = mainVC
+//        
         return true
     }
 

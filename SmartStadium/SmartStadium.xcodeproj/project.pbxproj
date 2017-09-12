@@ -7,18 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA297CE31F616A5A007A3692 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA297CE21F616A5A007A3692 /* ExploreViewController.swift */; };
+		BA297CE51F61A246007A3692 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA297CE41F61A246007A3692 /* SearchViewController.swift */; };
 		BA35A2821F5EC62600CE7A35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA35A2811F5EC62600CE7A35 /* AppDelegate.swift */; };
 		BA35A2841F5EC62600CE7A35 /* LiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA35A2831F5EC62600CE7A35 /* LiveViewController.swift */; };
 		BA35A2871F5EC62600CE7A35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA35A2851F5EC62600CE7A35 /* Main.storyboard */; };
 		BA35A2891F5EC62600CE7A35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA35A2881F5EC62600CE7A35 /* Assets.xcassets */; };
 		BA35A28C1F5EC62600CE7A35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA35A28A1F5EC62600CE7A35 /* LaunchScreen.storyboard */; };
 		BA35A2971F5EC62700CE7A35 /* SmartStadiumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA35A2961F5EC62700CE7A35 /* SmartStadiumTests.swift */; };
-		BA35A2A21F5EC65500CE7A35 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA35A2A11F5EC65500CE7A35 /* CustomTabBarController.swift */; };
 		BA35A2A51F5EC6D000CE7A35 /* UIKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA35A2A41F5EC6D000CE7A35 /* UIKitExtensions.swift */; };
-		BA35A2A81F5ECEA900CE7A35 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA35A2A71F5ECEA900CE7A35 /* SearchViewController.swift */; };
 		BA35A2AA1F5ED3CD00CE7A35 /* BarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA35A2A91F5ED3CD00CE7A35 /* BarViewController.swift */; };
 		BA35A2AC1F5ED41800CE7A35 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA35A2AB1F5ED41800CE7A35 /* GameViewController.swift */; };
 		BA35A2AE1F5ED44000CE7A35 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA35A2AD1F5ED44000CE7A35 /* NewsViewController.swift */; };
+		BAC633601F66EEAE00F5E9A3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAC6335F1F66EEAE00F5E9A3 /* MapKit.framework */; };
+		BAC633641F66F00F00F5E9A3 /* PointOfInterestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC633631F66F00F00F5E9A3 /* PointOfInterestType.swift */; };
+		BAC633671F66F18600F5E9A3 /* PointOfInterestTypeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC633661F66F18600F5E9A3 /* PointOfInterestTypeList.swift */; };
+		BAD255281F67059B004C8AAC /* DownloadAllPOITypesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD255271F67059B004C8AAC /* DownloadAllPOITypesInteractor.swift */; };
+		BAD2552D1F6709B9004C8AAC /* DownloadAllPOITypesInteractorFakeImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD2552C1F6709B9004C8AAC /* DownloadAllPOITypesInteractorFakeImplementation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BA297CE21F616A5A007A3692 /* ExploreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
+		BA297CE41F61A246007A3692 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		BA35A27E1F5EC62600CE7A35 /* SmartStadium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartStadium.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA35A2811F5EC62600CE7A35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA35A2831F5EC62600CE7A35 /* LiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveViewController.swift; sourceTree = "<group>"; };
@@ -42,12 +49,15 @@
 		BA35A2921F5EC62700CE7A35 /* SmartStadiumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartStadiumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA35A2961F5EC62700CE7A35 /* SmartStadiumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartStadiumTests.swift; sourceTree = "<group>"; };
 		BA35A2981F5EC62700CE7A35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BA35A2A11F5EC65500CE7A35 /* CustomTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		BA35A2A41F5EC6D000CE7A35 /* UIKitExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitExtensions.swift; sourceTree = "<group>"; };
-		BA35A2A71F5ECEA900CE7A35 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		BA35A2A91F5ED3CD00CE7A35 /* BarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarViewController.swift; sourceTree = "<group>"; };
 		BA35A2AB1F5ED41800CE7A35 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		BA35A2AD1F5ED44000CE7A35 /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		BAC6335F1F66EEAE00F5E9A3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		BAC633631F66F00F00F5E9A3 /* PointOfInterestType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointOfInterestType.swift; sourceTree = "<group>"; };
+		BAC633661F66F18600F5E9A3 /* PointOfInterestTypeList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointOfInterestTypeList.swift; sourceTree = "<group>"; };
+		BAD255271F67059B004C8AAC /* DownloadAllPOITypesInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadAllPOITypesInteractor.swift; sourceTree = "<group>"; };
+		BAD2552C1F6709B9004C8AAC /* DownloadAllPOITypesInteractorFakeImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadAllPOITypesInteractorFakeImplementation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAC633601F66EEAE00F5E9A3 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +79,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA297CE11F616362007A3692 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BA35A28A1F5EC62600CE7A35 /* LaunchScreen.storyboard */,
+				BA35A2851F5EC62600CE7A35 /* Main.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		BA35A2751F5EC62600CE7A35 = {
 			isa = PBXGroup;
 			children = (
 				BA35A2801F5EC62600CE7A35 /* SmartStadium */,
 				BA35A2951F5EC62700CE7A35 /* SmartStadiumTests */,
 				BA35A27F1F5EC62600CE7A35 /* Products */,
+				BAC6335E1F66EEAE00F5E9A3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,14 +110,13 @@
 		BA35A2801F5EC62600CE7A35 /* SmartStadium */ = {
 			isa = PBXGroup;
 			children = (
-				BA35A2A61F5ECE6200CE7A35 /* ViewControllers */,
-				BA35A2A31F5EC6B800CE7A35 /* MyExtensions */,
+				BAC633611F66EFD500F5E9A3 /* Models */,
+				BA297CE11F616362007A3692 /* Views */,
+				BA35A2A61F5ECE6200CE7A35 /* Controllers */,
+				BA35A2A31F5EC6B800CE7A35 /* CocoaExtensions */,
 				BA35A2811F5EC62600CE7A35 /* AppDelegate.swift */,
-				BA35A2851F5EC62600CE7A35 /* Main.storyboard */,
 				BA35A2881F5EC62600CE7A35 /* Assets.xcassets */,
-				BA35A28A1F5EC62600CE7A35 /* LaunchScreen.storyboard */,
 				BA35A28D1F5EC62600CE7A35 /* Info.plist */,
-				BA35A2A11F5EC65500CE7A35 /* CustomTabBarController.swift */,
 			);
 			path = SmartStadium;
 			sourceTree = "<group>";
@@ -110,24 +130,60 @@
 			path = SmartStadiumTests;
 			sourceTree = "<group>";
 		};
-		BA35A2A31F5EC6B800CE7A35 /* MyExtensions */ = {
+		BA35A2A31F5EC6B800CE7A35 /* CocoaExtensions */ = {
 			isa = PBXGroup;
 			children = (
 				BA35A2A41F5EC6D000CE7A35 /* UIKitExtensions.swift */,
 			);
-			name = MyExtensions;
+			name = CocoaExtensions;
 			sourceTree = "<group>";
 		};
-		BA35A2A61F5ECE6200CE7A35 /* ViewControllers */ = {
+		BA35A2A61F5ECE6200CE7A35 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				BA35A2831F5EC62600CE7A35 /* LiveViewController.swift */,
-				BA35A2A71F5ECEA900CE7A35 /* SearchViewController.swift */,
 				BA35A2A91F5ED3CD00CE7A35 /* BarViewController.swift */,
 				BA35A2AB1F5ED41800CE7A35 /* GameViewController.swift */,
 				BA35A2AD1F5ED44000CE7A35 /* NewsViewController.swift */,
+				BA297CE21F616A5A007A3692 /* ExploreViewController.swift */,
+				BA297CE41F61A246007A3692 /* SearchViewController.swift */,
 			);
-			name = ViewControllers;
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		BAC6335E1F66EEAE00F5E9A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BAC6335F1F66EEAE00F5E9A3 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BAC633611F66EFD500F5E9A3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BAC633631F66F00F00F5E9A3 /* PointOfInterestType.swift */,
+				BAC633651F66F16200F5E9A3 /* ViewModels */,
+				BAD255291F670727004C8AAC /* Interactors */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		BAC633651F66F16200F5E9A3 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				BAC633661F66F18600F5E9A3 /* PointOfInterestTypeList.swift */,
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
+		BAD255291F670727004C8AAC /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				BAD255271F67059B004C8AAC /* DownloadAllPOITypesInteractor.swift */,
+				BAD2552C1F6709B9004C8AAC /* DownloadAllPOITypesInteractorFakeImplementation.swift */,
+			);
+			name = Interactors;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,11 +237,18 @@
 					BA35A27D1F5EC62600CE7A35 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 6CE65434L7;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					BA35A2911F5EC62700CE7A35 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 6CE65434L7;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						TestTargetID = BA35A27D1F5EC62600CE7A35;
 					};
@@ -236,12 +299,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA35A2AC1F5ED41800CE7A35 /* GameViewController.swift in Sources */,
-				BA35A2A81F5ECEA900CE7A35 /* SearchViewController.swift in Sources */,
 				BA35A2841F5EC62600CE7A35 /* LiveViewController.swift in Sources */,
+				BA297CE51F61A246007A3692 /* SearchViewController.swift in Sources */,
+				BAD255281F67059B004C8AAC /* DownloadAllPOITypesInteractor.swift in Sources */,
+				BAC633671F66F18600F5E9A3 /* PointOfInterestTypeList.swift in Sources */,
 				BA35A2821F5EC62600CE7A35 /* AppDelegate.swift in Sources */,
+				BAD2552D1F6709B9004C8AAC /* DownloadAllPOITypesInteractorFakeImplementation.swift in Sources */,
+				BA297CE31F616A5A007A3692 /* ExploreViewController.swift in Sources */,
 				BA35A2A51F5EC6D000CE7A35 /* UIKitExtensions.swift in Sources */,
 				BA35A2AA1F5ED3CD00CE7A35 /* BarViewController.swift in Sources */,
-				BA35A2A21F5EC65500CE7A35 /* CustomTabBarController.swift in Sources */,
+				BAC633641F66F00F00F5E9A3 /* PointOfInterestType.swift in Sources */,
 				BA35A2AE1F5ED44000CE7A35 /* NewsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -386,7 +453,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = es.smartech.SmartStadium;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -399,7 +467,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = es.smartech.SmartStadium;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -413,7 +482,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = es.smartech.SmartStadiumTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartStadium.app/SmartStadium";
 			};
 			name = Debug;
@@ -428,7 +498,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = es.smartech.SmartStadiumTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartStadium.app/SmartStadium";
 			};
 			name = Release;
@@ -452,6 +523,7 @@
 				BA35A29D1F5EC62700CE7A35 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BA35A29E1F5EC62700CE7A35 /* Build configuration list for PBXNativeTarget "SmartStadiumTests" */ = {
 			isa = XCConfigurationList;
@@ -460,6 +532,7 @@
 				BA35A2A01F5EC62700CE7A35 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -12,23 +12,15 @@ class LiveViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //Personalizamos el aspecto del NavBar
-        let titleLabel = UILabel(frame: CGRect(x: 0, y: 0, width: view.frame.width - 32, height: view.frame.width))
-        titleLabel.text = "Live from Stadium"
-        titleLabel.textColor = UIColor.white
-        titleLabel.font = UIFont.systemFont(ofSize: 19)
-        navigationItem.titleView = titleLabel
-        view.backgroundColor = UIColor.white
-        
+        // Do any additional setup after loading the view, typically from a nib.
+        self.setBackground(imageBack: "fondo_general")
         
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        
     }
-
-
+    
 }
-
