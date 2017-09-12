@@ -9,18 +9,28 @@
 import Foundation
 
 class DownloadAllPOITypesInteractorFakeImplementation : DownloadAllPOITypesInteractor {
-
-    func execute(onSuccess: sucessClosure, onError: errorClosure) {
+    
+   func execute(onSuccess: @escaping (PointOfInterestTypesList) -> Void, onError: errorClosure = nil){
         
-        var poiTypeslist = PointOfInterestTypesList()
-        
-        for i in ["Puestos de bebidas", "Baños", "Salidas", "Tienda", "Museo", "Mi asiento"] {
-            let type = PointOfInterestType(name: i, description: "Description de \(i)", icon: "AppIcon")
+        let poiTypeslist = PointOfInterestTypesList()
+        let typeNames = ["Restauración", "Servicios", "Accesos", "Lugares especiales", "Emergencias", "Salidas"]
+        let typeDescriptions = ["Restaurante, kioskos de bebidas y/o comidas, máquinas de vending",
+                                "Baños, información, venta de entradas, depósitos de cojines",
+                                "Ascensores, escaleras, acceso a tribunas, accesos adaptados",
+                                "Tienda, museo, kiosko de regalos, fotomatón",
+                                "Policía, atención médica, seguridad del estadio",
+                                "Todas las salidas (estadio, tribuna, planta)"]
+        let typeIcons = ["restIcon", "servIcon", "accessIcon", "siteIcon", "sosIcon", "exitIcon"]
+    
+    for i in 0...5 {
+            let type = PointOfInterestType(name: typeNames[i], description: typeDescriptions[i], icon: typeIcons[i])
             poiTypeslist.add(poiType: type)
         }
         
         // Me aseguro de devolver la respuesta en el hilo principal
-        
+        OperationQueue.main.addOperation {
+            onSuccess(poiTypeslist)
+        }
     }
     
 }

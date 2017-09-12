@@ -8,10 +8,9 @@
 
 import Foundation
 
-typealias sucessClosure = (PointOfInterestTypesList) -> Void
 typealias errorClosure = ((Error) -> Void)?
 
 protocol DownloadAllPOITypesInteractor {
 
-    func execute(onSuccess: sucessClosure, onError: errorClosure)
+    func execute(onSuccess: @escaping (PointOfInterestTypesList) -> Void, onError: errorClosure)
 }
